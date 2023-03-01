@@ -1,4 +1,4 @@
-<?<php>
+<?php
     switch ($_REQUEST["acao"]){
         case 'cadastrar':
             $nome = $_POST["nome"];
@@ -17,4 +17,3 @@
         case 'excluir':
             break;
     }
-</php>
