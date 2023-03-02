@@ -44,6 +44,9 @@
               case "salvar":
                 include("salvar-atestado.php");
                 break;
+              case "editar":
+                include("editar-atestado.php");
+                break;
               default:
                 print "<h1>Bem Vindo</h1>";
             }
