@@ -49,5 +49,17 @@
 
         
         case 'excluir':
+            $sql = "DELETE FROM eventos WHERE id=".$_REQUEST["id"];
+            
+            $res = $conn->query($sql);
+            
+            if($res==true){
+                print "<script>alert('Atestado Excluido com Sucesso !');</script>";
+                print "<script>location.href='?page=listar';</script>";
+            }else{
+                print "<script>alert('Não foi possível excluir o atestado');</script>";
+                print "<script>location.href='?page=listar';</script>";
+            }
+
             break;
     }
